@@ -20,3 +20,9 @@ Eval : The parsed JavaScript data structure is evaluated for the results.
 Print : The result is printed after the evaluation.
 Loop : Loops the input command. To come out of NODE REPL, press ctrl+c twice
 */
+
+/*
+
+NPM (Node Package Manager) is the default package manager for Node.js 
+and is written entirely in Javascript. 
+*/
