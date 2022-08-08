@@ -26,3 +26,12 @@ Loop : Loops the input command. To come out of NODE REPL, press ctrl+c twice
 NPM (Node Package Manager) is the default package manager for Node.js 
 and is written entirely in Javascript. 
 */
+
+
+/*
+
+Node.js Modules
+In Node.js, Modules are the blocks of encapsulated code that communicates with an external application on the basis of their related functionality. 
+Modules can be a single file or a collection of multiples files/folders. 
+The reason programmers are heavily reliant on modules is because of their re-usability as well as the ability to break down a complex piece of code into manageable chunks.
+*/
