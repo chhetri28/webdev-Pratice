@@ -77,4 +77,15 @@ npm install express
 npm install mongoose
 npm install -g @angular/cli
 
+
+
+Node.js comes with different predefined modules (e.g. http, fs, path, etc.) that we use and scale our project. 
+We can define modules locally as Local Module. 
+It consists different functions declared inside a JavaScript object and we reuse them according to the requirement. 
+We can also package it and distribute it using NPM.
+
+Defining local module: Local module must be written in a separate JavaScript file.
+In the separate file, we can declare a JavaScript object with different properties and methods.
+
+
 */
