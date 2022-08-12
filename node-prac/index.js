@@ -88,4 +88,5 @@ Defining local module: Local module must be written in a separate JavaScript fil
 In the separate file, we can declare a JavaScript object with different properties and methods.
 
 
+
 */
