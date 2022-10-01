@@ -1,1 +1,50 @@
 //This is REACt Practice
+
+
+
+//Creating first Component
+import React from 'react'
+import ReactDom from 'react-dom';
+
+
+//Component 
+function Greetings() {
+  return (
+    <div>
+      <h3>Hello people</h3>
+      <ul>
+        <li>
+          <a href='#'>Hello, Sourav </a>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+//Returning HTML(jsx) 
+ReactDom.render(<Greetings />, document.getElementById('root'));
+
+
+//JSX rules
+// return single element
+//div /section/article or fragment
+//use camleCase for HTML attribute
+//className instead of class
+//close every element
+//formatting
+
+
+
+//Nested Components, react tools
+
+//Component 
+function Greetings() {
+  return (
+    <div>
+      <Person/>
+      <Message/>
+    </div>
+  );
+}
+const Person = () => <h3>Hello Sourav</h3>;
+const Message = () => <p>This is a small msg</p>;
