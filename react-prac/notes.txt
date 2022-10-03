@@ -48,3 +48,66 @@ function Greetings() {
 }
 const Person = () => <h3>Hello Sourav</h3>;
 const Message = () => <p>This is a small msg</p>;
+
+
+
+
+//props,list and map
+import React from 'react'
+import ReactDom from 'react-dom';
+import './index.css'
+
+//Var 
+const books = [
+  {
+    id:1,
+    img: "https://m.media-amazon.com/images/I/71g2ednj0JL.jpg",
+    title: "The Psychology of Money",
+    author: "Morgan Housel"
+  },
+  {
+    id:2,
+    img: "https://m.media-amazon.com/images/I/51JtK7GW3RL._SX324_BO1,204,203,200_.jpg",
+    title: "War of Lanka (Ram Chandra Series Book 4) ",
+    author: " Amish Tripathi "
+  },
+  {
+    id:3,
+    img: "https://m.media-amazon.com/images/I/51-nXsSRfZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+    title: "Atomic Habits ",
+    author: " James Clear "
+  },
+  {
+    img: "https://m.media-amazon.com/images/I/814L+vq01mL.jpg",
+    title: "Ikigai",
+    author: " Héctor García "
+  }
+];
+//Component 
+function BookList() {
+  return (
+    <section className='booklist'>
+      {books.map((book) => {
+        const { img, title, author } = book;
+        return (
+          <Books key={book.id} book={book}></Books>
+        );
+      })}
+    </section>
+  );
+};
+
+const Books = (props) => {
+  //Props destructuring
+  const { img, title, author } = props.book;
+  return (
+    <article className='book'>
+      <img src={img} alt="" />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
+    </article>
+  );
+};
+
+//Returning HTML(jsx) 
+ReactDom.render(<BookList />, document.getElementById('root'));
